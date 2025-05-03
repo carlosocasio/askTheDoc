@@ -5,9 +5,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 
-import sqlite3
-import sys
-import streamlit as st
+from langchain_community.vectorstores import FAISS
 
 st.write(f"Python version: {sys.version}")
 st.write(f"SQLite version: {sqlite3.sqlite_version}")
