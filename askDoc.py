@@ -3,13 +3,11 @@ from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
+st.write(f"Python version: {sys.version}")
+st.write(f"SQLite version: {sqlite3.sqlite_version}")
 from langchain.chains import RetrievalQA
 
 from langchain_community.vectorstores import FAISS
-
-st.write(f"Python version: {sys.version}")
-st.write(f"SQLite version: {sqlite3.sqlite_version}")
-
 
 def generate_response(uploaded_file, openai_api_key, query_text):
     # Load document if file is uploaded
