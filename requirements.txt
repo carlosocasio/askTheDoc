@@ -5,4 +5,3 @@ chromadb
 tiktoken
 langchain-community
 protobuf==3.20.3
-python-3.11
